@@ -122,13 +122,21 @@ p { font-size: 17px; color: var(--muted); }
 .timeline div { padding: 30px 22px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); min-height: 260px; }
 .timeline span { display: block; color: var(--accent); font-size: 12px; font-weight: 800; letter-spacing: .16em; margin-bottom: 64px; }
 .timeline p { font-size: 15px; }
-.pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; align-items: stretch; }
-.price-card { background: rgba(255,255,255,.055); border: 1px solid rgba(255,255,255,.14); padding: 34px; min-height: 650px; display: flex; flex-direction: column; }
-.price-card.featured { background: var(--paper); color: var(--ink); transform: translateY(-22px); box-shadow: 0 40px 90px rgba(0,0,0,.30); border-color: var(--paper); }
+.pricing-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; align-items: stretch; }
+.price-card { background: rgba(255,255,255,.055); border: 1px solid rgba(255,255,255,.14); padding: 28px; min-height: 560px; display: flex; flex-direction: column; }
+.price-card.featured { background: var(--paper); color: var(--ink); transform: translateY(-34px); box-shadow: 0 40px 90px rgba(0,0,0,.30); border-color: var(--paper); }
 .price-card.featured p, .price-card.featured li { color: #405164; }
+.price-card.premium {
+  border-color: rgba(255,255,255,.28);
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,.09),
+    rgba(255,255,255,.04)
+  );
+}
 .package-label { margin: 0 0 24px; text-transform: uppercase; letter-spacing: .14em; font-size: 12px; font-weight: 800; color: var(--accent-2); }
 .price-card.featured .package-label { color: var(--accent); }
-.price { font-family: "Playfair Display", serif; font-size: 54px; letter-spacing: -.055em; color: inherit !important; margin: 34px 0; }
+.price { font-family: "Playfair Display", serif; font-size: 44px; letter-spacing: -.055em; color: inherit !important; margin: 34px 0; }
 .price-card ul { margin: 0; padding: 0; list-style: none; }
 .price-card li { padding: 14px 0; border-top: 1px solid rgba(255,255,255,.13); color: rgba(251,250,247,.72); font-size: 15px; }
 .price-card.featured li { border-top-color: rgba(7,24,39,.12); }
@@ -158,7 +166,8 @@ details p { max-width: 760px; margin-bottom: 0; }
   .hero-grid, .section-head.split, .two-col, .booking-card { grid-template-columns: 1fr; }
   .hero-panel { min-height: auto; }
   .timeline { grid-template-columns: repeat(3, 1fr); }
-  .pricing-grid, .feature-grid { grid-template-columns: 1fr; }
+  .feature-grid { grid-template-columns: 1fr; }
+  .pricing-grid { grid-template-columns: repeat(2, 1fr); }
   .price-card.featured { transform: none; }
   .booking-action { justify-self: start; }
 }
@@ -182,4 +191,5 @@ details p { max-width: 760px; margin-bottom: 0; }
   .hero-actions, .button { width: 100%; }
   .button { padding: 0 18px; }
   .price-card { min-height: auto; }
+  .pricing-grid { grid-template-columns: 1fr; }
 }
