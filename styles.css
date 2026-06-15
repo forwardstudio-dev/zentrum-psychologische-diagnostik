@@ -93,9 +93,18 @@ p { font-size: 17px; color: var(--muted); }
 .hero-panel { background: var(--ink); color: var(--paper); padding: 34px; box-shadow: var(--shadow); min-height: 500px; display: flex; flex-direction: column; justify-content: space-between; position: relative; overflow: hidden; }
 .hero-panel::after { content: ""; position: absolute; inset: auto -90px -90px auto; width: 260px; height: 260px; border: 1px solid rgba(255,255,255,.16); border-radius: 50%; }
 .panel-kicker { font-family: "Playfair Display", serif; font-size: 32px; letter-spacing: -0.04em; }
-.signal-list { list-style: none; margin: 80px 0 0; padding: 0; }
-.signal-list li { display: grid; grid-template-columns: 42px 1fr; gap: 18px; padding: 20px 0; border-top: 1px solid rgba(255,255,255,.14); color: rgba(251,250,247,.92); font-weight: 600; }
-.signal-list span { color: var(--accent-2); font-size: 12px; letter-spacing: .12em; }
+.signal-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.signal-list li {
+  padding: 28px 0;
+  border-top: 1px solid rgba(255,255,255,.14);
+  color: rgba(251,250,247,.92);
+  font-weight: 600;
+  font-size: 20px;
+}
 .trust-strip { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .trust-strip span { padding: 22px; text-align: center; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .12em; color: #475769; border-right: 1px solid var(--line); }
 .trust-strip span:last-child { border-right: 0; }
