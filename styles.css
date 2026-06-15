@@ -134,8 +134,29 @@ p { font-size: 17px; color: var(--muted); }
     rgba(255,255,255,.04)
   );
 }
-.package-label { margin: 0 0 24px; text-transform: uppercase; letter-spacing: .14em; font-size: 12px; font-weight: 800; color: var(--accent-2); }
-.price-card.featured .package-label { color: var(--accent); }
+.package-label {
+  margin: 0 0 24px;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--accent-2);
+}
+
+.package-copy {
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0 0 24px;
+  color: rgba(251,250,247,.72);
+}
+
+.price-card.featured .package-copy {
+  color: #405164;
+}
+
+.price-card.featured .package-label {
+  color: var(--accent);
+}
 .price { font-family: "Playfair Display", serif; font-size: 44px; letter-spacing: -.055em; color: inherit !important; margin: 34px 0; }
 .price-card ul { margin: 0; padding: 0; list-style: none; }
 .price-card li { padding: 14px 0; border-top: 1px solid rgba(255,255,255,.13); color: rgba(251,250,247,.72); font-size: 15px; }
